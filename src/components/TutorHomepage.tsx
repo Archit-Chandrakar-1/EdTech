@@ -10,6 +10,7 @@ import {
   Home
 } from 'lucide-react';
 import Navbar from './Navbar';
+import StudyMaterials from './StudyMaterials';
 
 type SidebarOption = 
   | 'dashboard' 
@@ -72,13 +73,7 @@ function TutorHomepage() {
           </div>
         );
       case 'study-material':
-        return (
-          <div className="text-center py-20">
-            <BookOpen className="w-24 h-24 text-[#93C572] mx-auto mb-6" />
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">This is your Study Material</h2>
-            <p className="text-lg text-gray-600">Upload, organize, and manage all your course materials here.</p>
-          </div>
-        );
+        return <StudyMaterials />;
       case 'test-series':
         return (
           <div className="text-center py-20">
